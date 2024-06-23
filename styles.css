@@ -1,37 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* outline: 1px red solid; */
+}
+
+body {
+    background-color: white
+}
+
+.div {
+    padding: 50px 60px;
+    border: 1px solid white;
 }
 
 .navbar {
-    background-color: black; 
+    background-color: black;
     display: flex;
-    align-items: center; 
-    padding: 10px 20px;  
+    align-items: center;
+    padding: 7px 20px;
 }
 
-.navbar > * {
-    outline: 2px solid red;
-}
-
-.navbar a {
+.navbar a,
+.button {
     color: white;
     text-decoration: none;
 }
 
 .navbar-right {
     display: flex;
-    
-    min-width: 25%;
     justify-content: space-between;
+    width: 27%;
+}
+
+.button {
+    background-color: rgb(192, 3, 255);
+    padding: 3px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: Kanit;
 }
 
 #logo {
-    font-size: 30px;
+    font-size: 25px;
     margin-right: auto;
+    font-family: Dancing Script;
+    font-weight: bolder;
+    color: aqua;
 }
 
+.main-stuff {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    padding: 50px 60px;
+}
 
+.left-main {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    max-width: 50%;
+    margin-right: auto;
+    padding: 10px 0px;
+    justify-content: space-around;
+}
 
+.main-stuff .left-main h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 50px;
+    font-weight: 700px;
+    font-size: 50px;
+}
 
+.main-stuff .left-main p {
+    font-size: 17px;
+}
+
+.main-button {
+    background-color: rgb(3, 166, 253);
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 20px;
+    width: max-content;
+}
+
+#placeholder {
+    background-color: rgb(213, 213, 213);
+    height: 250px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#placeholder h1 {
+    color: rgb(119, 118, 118);
+}
+
+.cardsholder {
+    background-color: grey;
+    color: white;
+
+}
+
+.cardsholder h1 {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#imp-people {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 40px;
+}
+
+.card {
+    /* outline: 1px solid red; */
+    background-color: white;
+    color: black;
+    border: 5px dotted skyblue;
+    border-radius: 20px;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card>* {
+    text-align: center;
+}
+
+.photo {
+    background-color: rgb(218, 217, 217);
+    margin: 5px 10px;
+    height: 245px;
+    width: 245px;
+    border: 2px solid purple;
+    border-radius: 15px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+#quote {
+    font-family: Playwrite NG Modern;
+    font-size: 37px;
+    margin-bottom: 5px;
+}
+
+.cite {
+    align-self: flex-end;
+    font-size: 25px;
+    color: blueviolet;
+}
+
+.coa-block {
+    background-color: black;
+}
+
+.coa {
+    background-color: rgb(3, 166, 253);
+    color: white;
+    display: flex;
+    padding: 40px 50px;
+    margin: 40px 150px;
+    display: flex;
+}
+
+.coa-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.coa-left h2 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.coa-left p {
+    font-size: 20px;
+}
+
+#coabutton {
+    border: 2px solid white;
+    margin-left: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 30px;
+    min-width: fit-content;
+    align-self: center;
+}
