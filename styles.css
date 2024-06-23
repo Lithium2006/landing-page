@@ -214,3 +214,10 @@ body {
     min-width: fit-content;
     align-self: center;
 }
+
+footer, footer a {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 0px;
+}
